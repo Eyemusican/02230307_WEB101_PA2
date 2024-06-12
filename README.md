@@ -1,36 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Overview
+This project is a simple Pokedex application built with React. It allows users to search for Pokémon by name, catch and release them, and view their details and stats. The app utilizes various React components and state management with Zustand.
 
+## Getting Started
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Functionality
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Search: You can type a Pokémon's name in the search box to find it quickly. The app looks up the Pokémon's details from the PokeAPI and shows you the matching ones.
 
-## Learn More
+Catch and Release: If you find a Pokémon you want to keep, click "Catch." It adds the Pokémon to your collection. If you change your mind later, you can release it by clicking "Release" in the Drawer.
 
-To learn more about Next.js, take a look at the following resources:
+View Details: Clicking on a Pokémon card shows its details like height, weight, abilities, and types. This helps you learn more about each Pokémon.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+View Stats: You can see a Pokémon's stats like HP, Attack, Defense, etc., by clicking "Stats." The stats are color-coded: below 50% is red, and above 50% is green.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Pagination: The app splits Pokémon into pages of 12 to avoid showing too many at once. You can go to different pages using the buttons at the bottom.
 
-## Deploy on Vercel
+Drawer: Caught Pokémon are stored in the Drawer. You can open it to see all the Pokémon you've caught and decide whether to release any of them. It keeps your main screen tidy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Libraries Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **React**: For building the user interface.
+- **Shadui**: Provides UI components like buttons, inputs, badges, drawers, and pagination.
+- **Zustand**: For state management, allowing the app to manage caught Pokémon.
+- **clsx**: For composing class names, used in styling components.
+- **tailwind-merge**: For merging Tailwind CSS classes.
+
+
