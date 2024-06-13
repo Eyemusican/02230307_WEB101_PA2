@@ -22,7 +22,7 @@ View Stats: You can see a Pokémon's stats like HP, Attack, Defense, etc., by cl
 
 Pagination: The app splits Pokémon into pages of 12 to avoid showing too many at once. You can go to different pages using the buttons at the bottom.
 
-Drawer: Caught Pokémon are stored in the Drawer. You can open it to see all the Pokémon you've caught and decide whether to release any of them. It keeps your main screen tidy.
+Drawer: Caught Pokémon are stored in the Drawer. You can open it to see all the Pokémon you've caught and decide whether to release any of them. It keeps your main screen tidy meaning once you caught the pokemon and refreash the page, the caught pokemon would be still  be there.
 
 ## Libraries Used
 
