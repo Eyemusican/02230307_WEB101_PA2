@@ -9,6 +9,9 @@ First, run the development server:
 ```bash
 npm run dev
 
+In browser;
+localhost:3000/home
+
 
 ## Functionality
 
